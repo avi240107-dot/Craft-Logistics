@@ -138,9 +138,10 @@ nav a.active {
 /* Services page grid */
 #services-page {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  grid-template-columns: repeat(3, 1fr); /* 3 per row on desktop */
   gap: 25px;
 }
+
 
 /* Service Box + Hover Effect */
 .service-box {

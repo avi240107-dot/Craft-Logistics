@@ -60,6 +60,29 @@ nav a:hover {
 nav a.active {
   border-bottom: 2px solid #ff6600;
 }
+#about {
+  background-color: #f9f9f9;   /* subtle light background */
+  padding: 60px 20px;          /* spacing around the section */
+}
+
+#about .container {
+  max-width: 900px;            /* keeps text centered and readable */
+  margin: 0 auto;
+  text-align: center;          /* centers heading and text */
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;                 /* dark heading for contrast */
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.6;            /* improves readability */
+  color: #555;                 /* softer text color */
+  margin-bottom: 20px;
+}
 
 /* Hero Section */
 .hero {

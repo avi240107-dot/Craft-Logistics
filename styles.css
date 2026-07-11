@@ -60,28 +60,46 @@ nav a:hover {
 nav a.active {
   border-bottom: 2px solid #ff6600;
 }
+
+/* About Section */
 #about {
-  background-color: #f9f9f9;   /* subtle light background */
-  padding: 60px 20px;          /* spacing around the section */
+  background: linear-gradient(135deg, #f9f9f9, #eef2f3);
+  padding: 80px 20px;
 }
 
 #about .container {
-  max-width: 900px;            /* keeps text centered and readable */
+  max-width: 900px;
   margin: 0 auto;
-  text-align: center;          /* centers heading and text */
+  text-align: center;
 }
 
 #about h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;                 /* dark heading for contrast */
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #222;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+#about h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0077b6;
+  margin: 15px auto 0;
 }
 
 #about p {
-  font-size: 1.1rem;
-  line-height: 1.6;            /* improves readability */
-  color: #555;                 /* softer text color */
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #444;
   margin-bottom: 20px;
+}
+
+#about p:last-child {
+  margin-bottom: 0;
 }
 
 /* Hero Section */
@@ -156,23 +174,15 @@ nav a.active {
 }
 
 .service-grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-.service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
-
 .service-box {
   background: #f4f4f4;
   padding: 20px;
   border-radius: 8px;
-  width: 280px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 }
@@ -184,14 +194,61 @@ nav a.active {
 }
 
 .service-box img {
-  width: 100%;          /* fills the card width */
-  height: 200px;        /* consistent height for all cards */
-  object-fit: contain;  /* shows the full image without cropping */
-  background-color: #f9f9f9; /* fills gaps if aspect ratio differs */
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background-color: #f9f9f9;
   border-radius: 6px;
 }
 
 .service-box h3 {
+  margin-bottom: 10px;
+  color: #003366;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Workflow Section */
+.workflow {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.workflow h2 {
+  font-size: 2.2em;
+  margin-bottom: 40px;
+  color: #003366;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.workflow-steps {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.step {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.step i {
+  font-size: 2em;
+  color: #ff6600;
+  margin-bottom: 15px;
+}
+
+.step h3 {
   margin-bottom: 10px;
   color: #003366;
   font-family: 'Montserrat', sans-serif;
@@ -246,52 +303,6 @@ footer a:hover {
     font-size: 2em;
   }
   .service-grid {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr; /* single column on small screens */
   }
-}
-.workflow {
-  padding: 60px 20px;
-  background: #f9f9f9;
-  text-align: center;
-}
-
-.workflow h2 {
-  font-size: 2.2em;
-  margin-bottom: 40px;
-  color: #003366;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.workflow-steps {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.step {
-  background: white;
-  padding: 25px;
-  border-radius: 8px;
-  width: 220px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.step:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.step i {
-  font-size: 2em;
-  color: #ff6600;
-  margin-bottom: 15px;
-}
-
-.step h3 {
-  margin-bottom: 10px;
-  color: #003366;
-  font-family: 'Montserrat', sans-serif;
 }

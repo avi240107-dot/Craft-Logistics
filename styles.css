@@ -61,6 +61,136 @@ nav a.active {
   border-bottom: 2px solid #ff6600;
 }
 
+/* Hero Section */
+.hero {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-text p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.hero-text .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ff6600;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.hero-text .btn:hover {
+  background: #cc5200;
+}
+
+/* About Section */
+#about {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+#about .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #003366;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 20px;
+  background: #f1f1f1;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #003366;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.service-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.service-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+/* Workflow Section */
+.workflow {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.workflow h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #003366;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.workflow-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.step {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.step i {
+  font-size: 2.5rem;
+  color: #ff6600;
+  margin-bottom: 15px;
+}
+
+.step h3 {
+  margin-bottom: 10px;
+  color: #003366;
+}
+
 /* Quote Form Section */
 .quote-form {
   padding: 60px 20px;
@@ -130,19 +260,41 @@ footer {
   margin-top: 40px;
 }
 
+footer a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #ff6600;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     gap: 15px;
   }
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+  .workflow-steps {
+    flex-direction: column;
+    align-items: center;
+  }
   .quote-form .container {
     width: 100%;
     padding: 0 10px;
-  }
-  .quote-form input,
-  .quote-form textarea,
-  .quote-form button {
-    font-size: 1.1rem;   /* larger touch-friendly fields */
   }
 }

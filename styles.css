@@ -128,9 +128,17 @@ nav a.active {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Homepage services grid */
 .service-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 per row on desktop */
+  gap: 25px;
+}
+
+/* Services page grid */
+#services-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
   gap: 25px;
 }
 
@@ -282,7 +290,8 @@ footer .social-icons a:hover {
 
 /* Responsive Design */
 @media (max-width: 992px) {
-  .service-grid {
+  .service-grid,
+  #services-page {
     grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
   }
 }
@@ -292,7 +301,8 @@ footer .social-icons a:hover {
     flex-direction: column;
     gap: 15px;
   }
-  .service-grid {
+  .service-grid,
+  #services-page {
     grid-template-columns: 1fr; /* 1 per row on mobile */
   }
   .workflow-steps {

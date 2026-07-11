@@ -138,6 +138,12 @@ nav a.active {
   gap: 30px;
   flex-wrap: wrap;
 }
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
 
 .service-box {
   background: #f4f4f4;
@@ -155,9 +161,11 @@ nav a.active {
 }
 
 .service-box img {
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 15px;
+  width: 100%;          /* fills the card width */
+  height: 200px;        /* consistent height for all cards */
+  object-fit: contain;  /* shows the full image without cropping */
+  background-color: #f9f9f9; /* fills gaps if aspect ratio differs */
+  border-radius: 6px;
 }
 
 .service-box h3 {

@@ -87,7 +87,7 @@ nav a.active {
   margin-top: 20px;
   padding: 12px 25px;
   background: #ff6600;
-  color:white ;
+  color: white;
   border-radius: 6px;
   text-decoration: none;
   transition: background 0.3s;
@@ -130,7 +130,7 @@ nav a.active {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* 4 per row on desktop */
   gap: 25px;
 }
 
@@ -281,13 +281,19 @@ footer .social-icons a:hover {
 }
 
 /* Responsive Design */
+@media (max-width: 992px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     gap: 15px;
   }
   .service-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 per row on mobile */
   }
   .workflow-steps {
     flex-direction: column;

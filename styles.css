@@ -137,6 +137,15 @@ nav a.active {
   margin: 0 auto;
 }
 
+/* Services page grid (fixed 3 per row on desktop) */
+#services-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* Service Box + Hover Effect */
 .service-box {
   background: white;
@@ -311,6 +320,9 @@ footer .social-icons a:hover {
   .service-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
   }
+  #services-page {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
 }
 
 @media (max-width: 768px) {
@@ -319,6 +331,9 @@ footer .social-icons a:hover {
     gap: 15px;
   }
   .service-grid {
+    grid-template-columns: 1fr; /* 1 per row on mobile */
+  }
+  #services-page {
     grid-template-columns: 1fr; /* 1 per row on mobile */
   }
   .workflow-steps {

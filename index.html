@@ -33,40 +33,85 @@
   <meta name="twitter:description" content="Reliable logistics brokerage services with optimized freight solutions tailored to your needs." />
   <meta name="twitter:image" content="https://craftlogistics.org/images/preview.png" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   
   <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <div class="logo">
+    <a href="index.html" class="logo">
       <img src="images/logo.png" alt="Craft Logistics Logo" class="logo-img">
       <span>Craft Logistics Inc</span>
-    </div>
+    </a>
     <nav>
-      <ul>
+
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="quote.html">Request a Quote</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="services.html">Services</a></li>
-      </ul>
-    </nav>
+    </ul>
+
+</nav>
   </header>
 
   <section class="hero">
     <div class="hero-text">
       <h1>Reliable Brokerage Solutions for your Cargo</h1>
       <p>Connecting businesses with trusted logistics partners worldwide.</p>
+      
       <a href="quote.html" class="btn">Request a Quote</a>
+      <a href="services.html" class="btn">Our Services</a>
     </div>
+    <div class="scroll-indicator">
+    <span></span>
+</div>
   </section>
+<!-- Statistics Section -->
+<section class="stats" data-aos="fade-up">
 
-  <section id="about">
+    <div class="container stats-grid">
+
+        <div class="stat-box">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h2 class="counter" data-target="500">0</h2>
+            <p>Loads Delivered</p>
+        </div>
+
+        <div class="stat-box">
+            <i class="fa-solid fa-users"></i>
+            <h2 class="counter" data-target="250">0</h2>
+            <p>Happy Clients</p>
+        </div>
+
+        <div class="stat-box">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <h2 class="counter" data-target="48">0</h2>
+            <p>States & Provinces Covered</p>
+        </div>
+
+        <div class="stat-box">
+            <i class="fa-solid fa-headset"></i>
+            <h2 class="counter" data-target="24">0</h2>
+            <p>Hours Customer Support</p>
+        </div>
+
+    </div>
+
+</section>
+  <section id="about" data-aos="fade-up">
     <div class="container">
       <h2>About Craft Logistics, Inc.</h2>
       <p>
@@ -80,56 +125,133 @@
       </p>
     </div>
   </section>
+  <section class="why-us" data-aos="fade-up">
+
+<div class="container">
+
+<h2>Why Choose Craft Logistics?</h2>
+
+<div class="why-grid">
+
+<div class="why-card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Reliable</h3>
+
+<p>Trusted freight brokerage backed by experienced logistics professionals.</p>
+
+</div>
+
+<div class="why-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h3>On-Time Delivery</h3>
+
+<p>Efficient planning ensures your cargo arrives safely and on schedule.</p>
+
+</div>
+
+<div class="why-card">
+
+<i class="fa-solid fa-dollar-sign"></i>
+
+<h3>Competitive Pricing</h3>
+
+<p>Affordable transportation solutions without compromising quality.</p>
+
+</div>
+
+<div class="why-card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>24/7 Support</h3>
+
+<p>Dedicated customer service available whenever you need assistance.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
   <!-- ✅ Corrected Services Section -->
-  <section id="services" class="services">
+  <section id="services" class="services" data-aos="fade-up">
     <h2>Our Services</h2>
     
     <div class="service-grid homepage-grid">
-      <div class="service-box">
-        <img src="images/freight.webp" alt="Freight Brokerage" loading="lazy">
+<div class="service-box" data-aos="fade-up" data-aos-delay="100">        <img src="images/freight.webp" alt="Freight Brokerage" loading="lazy">
         <h3>Freight Brokerage</h3>
         <p>Efficiently matching shippers with carriers for smooth operations.</p>
+        <a href="quote.html" class="service-btn">
+          Request Quote
+        <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
-      <div class="service-box">
-        <img src="images/supplychain.webp" alt="Supply Chain Consulting" loading="lazy">
+<div class="service-box" data-aos="fade-up" data-aos-delay="200">        <img src="images/supplychain.webp" alt="Supply Chain Consulting" loading="lazy">
         <h3>Supply Chain Consulting</h3>
         <p>Optimizing your logistics strategy for cost and time savings.</p>
+        <a href="quote.html" class="service-btn">
+        Request Quote
+        <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
-      <div class="service-box">
-        <img src="images/support.webp" alt="24/7 Support" loading="lazy">
+<div class="service-box" data-aos="fade-up" data-aos-delay="300">        <img src="images/support.webp" alt="24/7 Support" loading="lazy">
         <h3>24/7 Support</h3>
         <p>Dedicated assistance whenever you need it.</p>
+        <a href="quote.html" class="service-btn">
+        Request Quote
+        <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
-      <div class="service-box">
-        <img src="images/4.webp" alt="Customs Clearance" loading="lazy">
+<div class="service-box" data-aos="fade-up" data-aos-delay="400">        <img src="images/4.webp" alt="Customs Clearance" loading="lazy">
         <h3>Customs Clearance</h3>
         <p>Expert handling of import/export documentation and compliance.</p>
+        <a href="quote.html" class="service-btn">
+        Request Quote
+        <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
-      <div class="service-box">
-        <img src="images/2.webp" alt="Warehousing Solutions" loading="lazy">
+<div class="service-box" data-aos="fade-up" data-aos-delay="500">        <img src="images/2.webp" alt="Warehousing Solutions" loading="lazy">
         <h3>Warehousing Solutions</h3>
         <p>Secure storage, inventory management, and distribution services.</p>
+        <a href="quote.html" class="service-btn">
+        Request Quote
+        <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
-      <div class="service-box">
-        <img src="images/3.webp" alt="Last-Mile Delivery" loading="lazy">
+<div class="service-box" data-aos="fade-up" data-aos-delay="600">        <img src="images/3.webp" alt="Last-Mile Delivery" loading="lazy">
         <h3>Last-Mile Delivery</h3>
         <p>Reliable delivery ensuring your cargo reaches its final destination.</p>
+        <a href="quote.html" class="service-btn">
+        Request Quote
+        <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
-      <div class="service-box">
-        <img src="images/1.webp" alt="Technology Integration" loading="lazy">
+<div class="service-box" data-aos="fade-up" data-aos-delay="700">        <img src="images/1.webp" alt="Technology Integration" loading="lazy">
         <h3>Technology Integration</h3>
         <p>Real-time tracking and logistics software to streamline operations.</p>
+        <a href="quote.html" class="service-btn">
+        Request Quote
+        <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
-      <div class="service-box">
-        <img src="images/5.webp" alt="International Shipping" loading="lazy">
+<div class="service-box" data-aos="fade-up" data-aos-delay="800">        <img src="images/5.webp" alt="International Shipping" loading="lazy">
         <h3>International Shipping</h3>
         <p>Air and ocean freight solutions for global trade.</p>
+        <a href="quote.html" class="service-btn">
+        Request Quote
+        <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
     </div>
   </section>
 
-  <section id="workflow" class="workflow">
+<section id="workflow" class="workflow" data-aos="fade-up">
     <h2>Our Workflow</h2>
     <div class="workflow-steps">
       <div class="step">
@@ -155,18 +277,157 @@
     </div>
   </section>
 
-  <footer id="contact">
-    <div class="contact-info">
-      <p><strong>Craft Logistics Inc</strong></p>
-      <p>📍 94 Robertson Street, Collingwood, ON L9Y 0X1</p>
-      <p>📧 <a href="mailto:sales@craftlogistics.net">sales@craftlogistics.net</a></p>
-      <p>📞 <a href="tel:2493598148">249-359-8148</a></p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-  </footer>
+<section class="cta" data-aos="zoom-in">
+
+<div class="container">
+
+<h2>Ready to Move Your Freight?</h2>
+
+<p>
+Partner with Craft Logistics for reliable transportation and brokerage solutions across North America.
+</p>
+
+<a href="quote.html" class="btn">
+Request a Freight Quote
+</a>
+
+</div>
+
+</section>
+
+<footer id="contact">
+
+<div class="footer-container">
+
+<div class="footer-column">
+
+<img src="images/logo.png" class="footer-logo">
+
+<h3>Craft Logistics Inc.</h3>
+
+<p>
+Reliable freight brokerage and logistics solutions across Canada and the USA.
+</p>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="quote.html">Request Quote</a></li>
+
+<li><a href="#about">About</a></li>
+
+</ul>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Services</h3>
+
+<ul>
+
+<li>Freight Brokerage</li>
+
+<li>Supply Chain</li>
+
+<li>Warehousing</li>
+
+<li>International Shipping</li>
+
+<li>Customs Clearance</li>
+
+</ul>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Contact</h3>
+
+<p>
+
+<i class="fas fa-location-dot"></i>
+
+94 Robertson Street
+
+Collingwood ON
+
+</p>
+
+<p>
+
+<i class="fas fa-phone"></i>
+
+249-359-8148
+
+</p>
+
+<p>
+
+<i class="fas fa-envelope"></i>
+
+sales@craftlogistics.net
+
+</p>
+
+<div class="social-icons">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-x-twitter"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+©  Craft Logistics Inc. All Rights Reserved.
+
+</div>
+
+</footer>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+
+duration:1000,
+
+once:true,
+
+offset:100
+
+});
+
+</script>
+<div class="floating-buttons">
+
+<a href="tel:2493598148" class="call-btn">
+<i class="fas fa-phone"></i>
+</a>
+
+<a href="https://wa.me/12493598148" target="_blank" class="whatsapp-btn">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</div>
 </body>
 </html>

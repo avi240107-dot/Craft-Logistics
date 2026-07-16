@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services - Craft Logistics</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Services | Craft Logistics Inc</title>
+
+<meta name="description" content="Explore freight brokerage, FTL, LTL, refrigerated freight, flatbed, heavy haul and logistics services from Craft Logistics Inc.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-  <div class="logo">
-    <img src="images/logo.png" alt="Craft Logistics Logo" class="logo-img">
-    Craft Logistics
-  </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html" class="active">Services</a></li>
-      <li><a href="quote.html">Request a Quote</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Craft Logistics Logo" class="logo-img">
+      <span>Craft Logistics Inc</span>
+    </a>
+    <nav>
 
-<section class="hero" style="background:url('images/freight.webp') center/cover no-repeat;">
-  <div class="hero-text">
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="quote.html">Request a Quote</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</nav>
+  </header>
+
+<section class="hero services-hero" data-aos="fade-in">
+    <div class="hero-text">
     <h1>Our Services</h1>
     <p>Reliable freight brokerage and logistics solutions across Canada and the USA</p>
   </div>
+   <div class="scroll-indicator">
+        <span></span>
+    </div>
 </section>
 
 <section class="services">
@@ -42,7 +64,7 @@
 
   <!-- Services grid with 3 per row -->
   <div id="services-page" class="service-grid">
-    <div class="service-box">
+    <div class="service-box" data-aos="fade-up" data-aos-delay="100">
       <img src="images/truck.webp" alt="Full Truckload" loading="lazy">
       <h3>Full Truckload (FTL)</h3>
       <p>Cost‑effective and dependable FTL freight shipping services across Canada and the USA. 
@@ -52,7 +74,7 @@
     tracking and 24/7 support.</p>
     </div>
 
-    <div class="service-box">
+    <div class="service-box" data-aos="fade-up" data-aos-delay="200">
       <img src="images/ltl.webp" alt="Less Than Truckload" loading="lazy">
       <h3>Volume LTL</h3>
       <p>Affordable less‑than‑truckload solutions with the same reliability as full truckload freight. 
@@ -61,7 +83,7 @@
       ensure flexible scheduling, transparent pricing, and dependable delivery across North America.</p>
     </div>
 
-    <div class="service-box">
+    <div class="service-box" data-aos="fade-up" data-aos-delay="300">
       <img src="images/produce.webp" alt="Produce Transport" loading="lazy">
       <h3>Produce Transportation</h3>
       <p>Specialized handling of perishable goods with timely delivery and expert coordination. 
@@ -70,7 +92,7 @@
       we guarantee your produce reaches its destination in optimal condition.</p>
     </div>
 
-    <div class="service-box">
+    <div class="service-box" data-aos="fade-up" data-aos-delay="400">
       <img src="images/flatbed.webp" alt="Heavy Haul" loading="lazy">
       <h3>Heavy Haul & Flatbed</h3>
       <p>Secure and efficient delivery of oversize freight with proven heavy haul drivers. 
@@ -79,7 +101,7 @@
       smooth transport of even the most challenging loads.</p>
     </div>
 
-    <div class="service-box">
+    <div class="service-box" data-aos="fade-up" data-aos-delay="500">
       <img src="images/poweronly.webp" alt="Power Only" loading="lazy">
       <h3>Power-Only Freight</h3>
       <p>Reliable coordination of carriers for safe and timely power‑only shipments nationwide. 
@@ -88,7 +110,7 @@
       and tracking to keep your operations running smoothly.</p>
     </div>
 
-    <div class="service-box">
+    <div class="service-box" data-aos="fade-up" data-aos-delay="600">
       <img src="images/reefer.webp" alt="Refrigerated Freight" loading="lazy">
       <h3>Refrigerated Freight</h3>
       <p> Temperature‑sensitive freight solutions with trusted refrigerated carriers across the country. 
@@ -98,18 +120,140 @@
     </div>
   </div>
 </section>
+<section class="cta" data-aos="zoom-in">
 
-<footer>
-  <div class="contact-info" id="contact">
-    <p>Contact us today for dependable logistics solutions tailored to your needs.</p>
-    <p>Email: sales@craftlogistics.net | Phone: 249-359-8148</p>
-  </div>
-  <div class="social-icons">
-    <a href="#">Facebook</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">Twitter</a>
-  </div>
+<div class="container">
+
+<h2>Need a Custom Freight Solution?</h2>
+
+<p>
+Our logistics specialists are ready to provide a competitive quote tailored to your shipment.
+</p>
+
+<a href="quote.html" class="btn">
+Request a Free Quote
+</a>
+
+</div>
+
+</section>
+
+<footer id="contact">
+
+<div class="footer-container">
+
+<div class="footer-column">
+
+<img src="images/logo.png" class="footer-logo">
+
+<h3>Craft Logistics Inc.</h3>
+
+<p>
+Reliable freight brokerage and logistics solutions across Canada and the USA.
+</p>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="quote.html">Request Quote</a></li>
+
+<li><a href="#about">About</a></li>
+
+</ul>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Services</h3>
+
+<ul>
+
+<li>Freight Brokerage</li>
+
+<li>Supply Chain</li>
+
+<li>Warehousing</li>
+
+<li>International Shipping</li>
+
+<li>Customs Clearance</li>
+
+</ul>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Contact</h3>
+
+<p>
+
+<i class="fas fa-location-dot"></i>
+
+94 Robertson Street
+
+Collingwood ON
+
+</p>
+
+<p>
+
+<i class="fas fa-phone"></i>
+
+249-359-8148
+
+</p>
+
+<p>
+
+<i class="fas fa-envelope"></i>
+
+sales@craftlogistics.net
+
+</p>
+
+<div class="social-icons">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-x-twitter"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+©  Craft Logistics Inc. All Rights Reserved.
+
+</div>
+
 </footer>
 
-</body>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true
+});
+</script>
+
+<script src="script.js"></script></body>
 </html>
